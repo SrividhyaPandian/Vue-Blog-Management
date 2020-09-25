@@ -1,0 +1,119 @@
+// BlogList CSS
+.blogList-wrapper {
+    .blogList-table {
+        list-style-type: none;
+        .table-wrapper {
+            thead{
+                tr{
+                    th{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    text-align: left;
+                }
+                .actionIcons {
+                    cursor: pointer;
+                    // padding:0;
+                    .editRow {
+                        padding-right: 20px;
+                    }
+                }
+                .activeContent {
+                    user-select: text;
+                    cursor: url('../highlight.png'), auto;
+                }
+                .highlight {
+                    background-color: yellow;
+                  }
+            }
+        }
+    }
+}
+// Create/ Edit Blog CSS
+.blogForm-wrapper {
+    padding: 50px;
+    form{
+        .v-input {
+            label {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
+// Highlighted and Preview CSS
+.highlight-wrapper, .preview-main-wrapper {
+    padding: 25px;
+    h3 {
+        text-align: left;
+        @extend .title;
+    }
+    .custom-ul {
+        list-style-type: circle;
+        li {
+            text-align: left;
+            margin-bottom: 15px;
+            .customChip {
+                background-color: yellow;
+                font-weight: 600;
+                .v-chip__content {
+                    cursor: pointer !important;
+                }
+            }
+        }
+    }
+}
+.preview-wrapper {
+    .prev-card {
+        cursor: pointer;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+        border-radius: 10px;
+    }
+}
+// Blog CSS
+.blog-wrapper {
+    .card-wrapper {
+        width: 100%;
+        padding: 25px;
+        .title {
+            @extend .title;
+        }
+        .author {
+            font-weight: 600;
+        }
+    }
+}
+.cancelBtn {
+    background-color:#ff5252!important;
+    color: #fff !important;
+    &.highlight {
+        margin-left: 20px;
+        float: left;
+    }    
+}
+.title {
+    padding: 15px;
+    font-style: italic;
+    color: #f58f22;
+    font-weight: bold;
+    &.highlight {
+        span {
+            font-style: normal;
+            color: #8686a9;
+            font-weight: bold;
+        }
+    }
+}
+.customBtn {
+    background-color: #37314f !important;
+    color: #fff !important;
+    &.reset {
+        background-color: #2196f3!important;
+    }
+}
