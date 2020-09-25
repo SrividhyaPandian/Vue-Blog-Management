@@ -29,11 +29,6 @@ export default {
     props: {
         tableData: [Object, Array]
     },
-    data(){
-        return {
-            showHighlightIcon : false
-        }
-    },
     methods: {
         rowClicked(rowData, action) {
            this.$emit('onRowClicked', rowData, action)
